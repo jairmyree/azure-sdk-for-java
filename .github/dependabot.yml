@@ -11,6 +11,7 @@ updates:
       - "sdk/identity" # Location of package manifests
     open-pull-requests-limit: 20
     ignore:
+      - dependency-name: "*"
       - update-types: ["version-update:semver-major"]
     schedule:
       interval: "daily"

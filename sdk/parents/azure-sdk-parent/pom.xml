@@ -196,7 +196,7 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-release-plugin</artifactId>
-          <version>3.0.1</version> <!-- {x-version-update;org.apache.maven.plugins:maven-release-plugin;external_dependency} -->
+          <version>3.1.0</version> <!-- {x-version-update;org.apache.maven.plugins:maven-release-plugin;external_dependency} -->
         </plugin>
 
         <!-- This plugin used to remove files generated at build-time. -->

@@ -6,13 +6,15 @@
 version: 2
 updates:
   - package-ecosystem: "maven" # See documentation for possible values
-    directories: 
-      - "/sdk/core"
-      - "sdk/identity" # Location of package manifests
-    open-pull-requests-limit: 20
+    directory: "/sdk/core" # Location of package manifests
+    open-pull-requests-limit: 50
     ignore:
       - dependency-name: "*"
         update-types: ["version-update:semver-major"]
     schedule:
       interval: "daily"
+    groups:
+      applies-to: version-updates
+      patterns:
+        - "*"
       

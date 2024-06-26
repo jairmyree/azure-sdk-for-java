@@ -6,6 +6,8 @@
 version: 2
 updates:
   - package-ecosystem: "maven" # See documentation for possible values
-    directory: "/sdk/search/" # Location of package manifests
+    directory: "/" # Location of package manifests
+    open-pull-requests-limit: 0
     schedule:
       interval: "daily"
+      

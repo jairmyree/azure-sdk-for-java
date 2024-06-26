@@ -12,7 +12,7 @@ updates:
     open-pull-requests-limit: 20
     ignore:
       - dependency-name: "*"
-      - update-types: ["version-update:semver-major"]
+        update-types: ["version-update:semver-major"]
     schedule:
       interval: "daily"
       

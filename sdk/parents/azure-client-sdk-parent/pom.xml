@@ -310,7 +310,7 @@
       <plugin>
         <groupId>org.codehaus.mojo</groupId>
         <artifactId>animal-sniffer-maven-plugin</artifactId>
-        <version>1.23</version> <!-- {x-version-update;org.codehaus.mojo:animal-sniffer-maven-plugin;external_dependency} -->
+        <version>1.24</version> <!-- {x-version-update;org.codehaus.mojo:animal-sniffer-maven-plugin;external_dependency} -->
         <executions>
           <execution>
             <phase>package</phase>
@@ -342,7 +342,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-checkstyle-plugin</artifactId>
-        <version>3.3.1</version> <!-- {x-version-update;org.apache.maven.plugins:maven-checkstyle-plugin;external_dependency} -->
+        <version>3.4.0</version> <!-- {x-version-update;org.apache.maven.plugins:maven-checkstyle-plugin;external_dependency} -->
         <executions>
           <execution>
             <phase>verify</phase>
@@ -372,7 +372,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-jar-plugin</artifactId>
-        <version>3.3.0</version> <!-- {x-version-update;org.apache.maven.plugins:maven-jar-plugin;external_dependency} -->
+        <version>3.4.2</version> <!-- {x-version-update;org.apache.maven.plugins:maven-jar-plugin;external_dependency} -->
         <configuration>
           <outputDirectory>${packageOutputDirectory}</outputDirectory>
           <archive combine.children="append">
@@ -412,7 +412,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-javadoc-plugin</artifactId>
-        <version>3.6.3</version> <!-- {x-version-update;org.apache.maven.plugins:maven-javadoc-plugin;external_dependency} -->
+        <version>3.8.0</version> <!-- {x-version-update;org.apache.maven.plugins:maven-javadoc-plugin;external_dependency} -->
         <executions>
           <execution>
             <id>attach-javadocs</id>
@@ -596,7 +596,7 @@
       <plugin>
         <groupId>org.revapi</groupId>
         <artifactId>revapi-maven-plugin</artifactId>
-        <version>0.14.6</version> <!-- {x-version-update;org.revapi:revapi-maven-plugin;external_dependency} -->
+        <version>0.15.0</version> <!-- {x-version-update;org.revapi:revapi-maven-plugin;external_dependency} -->
         <executions>
           <execution>
             <goals>
@@ -609,7 +609,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-enforcer-plugin</artifactId>
-        <version>3.4.1</version> <!-- {x-version-update;org.apache.maven.plugins:maven-enforcer-plugin;external_dependency} -->
+        <version>3.5.0</version> <!-- {x-version-update;org.apache.maven.plugins:maven-enforcer-plugin;external_dependency} -->
         <configuration>
           <rules>
             <!--
@@ -719,7 +719,7 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-checkstyle-plugin</artifactId>
-          <version>3.3.1</version> <!-- {x-version-update;org.apache.maven.plugins:maven-checkstyle-plugin;external_dependency} -->
+          <version>3.4.0</version> <!-- {x-version-update;org.apache.maven.plugins:maven-checkstyle-plugin;external_dependency} -->
           <dependencies>
             <dependency>
               <groupId>com.azure</groupId>
@@ -801,7 +801,7 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-javadoc-plugin</artifactId>
-          <version>3.6.3</version> <!-- {x-version-update;org.apache.maven.plugins:maven-javadoc-plugin;external_dependency} -->
+          <version>3.8.0</version> <!-- {x-version-update;org.apache.maven.plugins:maven-javadoc-plugin;external_dependency} -->
           <configuration>
             <source>1.8</source>
             <doctitle>Azure SDK for Java Reference Documentation</doctitle>
@@ -911,7 +911,7 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-surefire-plugin</artifactId>
-          <version>3.2.5</version> <!-- {x-version-update;org.apache.maven.plugins:maven-surefire-plugin;external_dependency} -->
+          <version>3.3.1</version> <!-- {x-version-update;org.apache.maven.plugins:maven-surefire-plugin;external_dependency} -->
           <configuration>
             <runOrder>alphabetical</runOrder>
             <useSystemClassLoader>false</useSystemClassLoader>
@@ -955,7 +955,7 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-failsafe-plugin</artifactId>
-          <version>3.2.5</version> <!-- {x-version-update;org.apache.maven.plugins:maven-failsafe-plugin;external_dependency} -->
+          <version>3.3.1</version> <!-- {x-version-update;org.apache.maven.plugins:maven-failsafe-plugin;external_dependency} -->
           <configuration>
             <runOrder>alphabetical</runOrder>
             <useSystemClassLoader>false</useSystemClassLoader>
@@ -999,7 +999,7 @@
         <plugin>
           <groupId>org.revapi</groupId>
           <artifactId>revapi-maven-plugin</artifactId>
-          <version>0.14.6</version> <!-- {x-version-update;org.revapi:revapi-maven-plugin;external_dependency} -->
+          <version>0.15.0</version> <!-- {x-version-update;org.revapi:revapi-maven-plugin;external_dependency} -->
           <configuration>
             <skip>${revapi.skip}</skip>
             <convertAnalysisConfigurationFiles>true</convertAnalysisConfigurationFiles>
@@ -1038,12 +1038,12 @@
             <dependency>
               <groupId>org.revapi</groupId>
               <artifactId>revapi-java</artifactId>
-              <version>0.26.1</version> <!-- {x-version-update;org.revapi:revapi-java;external_dependency} -->
+              <version>0.28.1</version> <!-- {x-version-update;org.revapi:revapi-java;external_dependency} -->
             </dependency>
             <dependency>
               <groupId>org.revapi</groupId>
               <artifactId>revapi-reporter-json</artifactId>
-              <version>0.4.5</version> <!-- {x-version-update;org.revapi:revapi-reporter-json;external_dependency} -->
+              <version>0.5.0</version> <!-- {x-version-update;org.revapi:revapi-reporter-json;external_dependency} -->
             </dependency>
           </dependencies>
         </plugin>
@@ -1051,7 +1051,7 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-shade-plugin</artifactId>
-          <version>3.5.2</version> <!-- {x-version-update;org.apache.maven.plugins:maven-shade-plugin;external_dependency} -->
+          <version>3.6.0</version> <!-- {x-version-update;org.apache.maven.plugins:maven-shade-plugin;external_dependency} -->
           <configuration>
             <skip>${shade.skip}</skip>
           </configuration>
@@ -1097,7 +1097,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-checkstyle-plugin</artifactId>
-        <version>3.3.1</version> <!-- {x-version-update;org.apache.maven.plugins:maven-checkstyle-plugin;external_dependency} -->
+        <version>3.4.0</version> <!-- {x-version-update;org.apache.maven.plugins:maven-checkstyle-plugin;external_dependency} -->
         <reportSets>
           <reportSet>
             <id>non-aggregate</id>
@@ -1115,7 +1115,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-javadoc-plugin</artifactId>
-        <version>3.6.3</version> <!-- {x-version-update;org.apache.maven.plugins:maven-javadoc-plugin;external_dependency} -->
+        <version>3.8.0</version> <!-- {x-version-update;org.apache.maven.plugins:maven-javadoc-plugin;external_dependency} -->
         <reportSets>
           <reportSet>
             <id>non-aggregate</id>
@@ -1128,7 +1128,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-project-info-reports-plugin</artifactId>
-        <version>3.5.0</version> <!-- {x-version-update;org.apache.maven.plugins:maven-project-info-reports-plugin;external_dependency} -->
+        <version>3.6.2</version> <!-- {x-version-update;org.apache.maven.plugins:maven-project-info-reports-plugin;external_dependency} -->
         <reportSets>
           <reportSet>
             <reports>
@@ -1147,7 +1147,7 @@
       <plugin>
         <groupId>org.revapi</groupId>
         <artifactId>revapi-maven-plugin</artifactId>
-        <version>0.14.6</version> <!-- {x-version-update;org.revapi:revapi-maven-plugin;external_dependency} -->
+        <version>0.15.0</version> <!-- {x-version-update;org.revapi:revapi-maven-plugin;external_dependency} -->
         <configuration>
           <checkDependencies>false</checkDependencies>
         </configuration>
@@ -1199,7 +1199,7 @@
           <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-javadoc-plugin</artifactId>
-            <version>3.6.3</version> <!-- {x-version-update;org.apache.maven.plugins:maven-javadoc-plugin;external_dependency} -->
+            <version>3.8.0</version> <!-- {x-version-update;org.apache.maven.plugins:maven-javadoc-plugin;external_dependency} -->
             <configuration>
               <sourceFileExcludes>
                 <sourceFileExclude>module-info.java</sourceFileExclude>
@@ -1214,7 +1214,7 @@
           <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-javadoc-plugin</artifactId>
-            <version>3.6.3</version> <!-- {x-version-update;org.apache.maven.plugins:maven-javadoc-plugin;external_dependency} -->
+            <version>3.8.0</version> <!-- {x-version-update;org.apache.maven.plugins:maven-javadoc-plugin;external_dependency} -->
             <configuration>
               <sourceFileExcludes>
                 <sourceFileExclude>module-info.java</sourceFileExclude>
@@ -1328,7 +1328,7 @@
           <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-surefire-plugin</artifactId>
-            <version>3.2.5</version> <!-- {x-version-update;org.apache.maven.plugins:maven-surefire-plugin;external_dependency} -->
+            <version>3.3.1</version> <!-- {x-version-update;org.apache.maven.plugins:maven-surefire-plugin;external_dependency} -->
             <configuration>
               <argLine>
                 ${defaultSurefireArgLine}
@@ -1344,7 +1344,7 @@
           <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-failsafe-plugin</artifactId>
-            <version>3.2.5</version> <!-- {x-version-update;org.apache.maven.plugins:maven-failsafe-plugin;external_dependency} -->
+            <version>3.3.1</version> <!-- {x-version-update;org.apache.maven.plugins:maven-failsafe-plugin;external_dependency} -->
             <configuration>
               <argLine>
                 ${defaultFailsafeArgLine}
@@ -1379,7 +1379,7 @@
           <plugin>
             <groupId>org.codehaus.mojo</groupId>
             <artifactId>exec-maven-plugin</artifactId>
-            <version>3.2.0</version> <!-- {x-version-update;org.codehaus.mojo:exec-maven-plugin;external_dependency} -->
+            <version>3.3.0</version> <!-- {x-version-update;org.codehaus.mojo:exec-maven-plugin;external_dependency} -->
             <executions>
               <execution>
                 <id>generate-overview-from-readme</id>
@@ -1407,7 +1407,7 @@
           <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-javadoc-plugin</artifactId>
-            <version>3.6.3</version> <!-- {x-version-update;org.apache.maven.plugins:maven-javadoc-plugin;external_dependency} -->
+            <version>3.8.0</version> <!-- {x-version-update;org.apache.maven.plugins:maven-javadoc-plugin;external_dependency} -->
             <configuration combine.children="append">
               <overview>${project.build.directory}/readme_overview.html</overview>
             </configuration>
@@ -1429,7 +1429,7 @@
           <plugin>
             <groupId>org.codehaus.mojo</groupId>
             <artifactId>exec-maven-plugin</artifactId>
-            <version>3.2.0</version> <!-- {x-version-update;org.codehaus.mojo:exec-maven-plugin;external_dependency} -->
+            <version>3.3.0</version> <!-- {x-version-update;org.codehaus.mojo:exec-maven-plugin;external_dependency} -->
             <executions>
               <execution>
                 <id>verify-readme-codesnippet</id>
@@ -1466,7 +1466,7 @@
           <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-surefire-plugin</artifactId>
-            <version>3.2.5</version> <!-- {x-version-update;org.apache.maven.plugins:maven-surefire-plugin;external_dependency} -->
+            <version>3.3.1</version> <!-- {x-version-update;org.apache.maven.plugins:maven-surefire-plugin;external_dependency} -->
             <configuration>
               <systemPropertiesFile>${AZURE_TEST_SYSTEM_PLAYBACK_PROPERTIES_FILE}</systemPropertiesFile>
             </configuration>
@@ -1488,7 +1488,7 @@
           <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-surefire-plugin</artifactId>
-            <version>3.2.5</version> <!-- {x-version-update;org.apache.maven.plugins:maven-surefire-plugin;external_dependency} -->
+            <version>3.3.1</version> <!-- {x-version-update;org.apache.maven.plugins:maven-surefire-plugin;external_dependency} -->
             <configuration>
               <systemPropertiesFile>${AZURE_TEST_SYSTEM_PLAYBACK_PROPERTIES_FILE}</systemPropertiesFile>
             </configuration>
@@ -1509,7 +1509,7 @@
           <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-surefire-plugin</artifactId>
-            <version>3.2.5</version> <!-- {x-version-update;org.apache.maven.plugins:maven-surefire-plugin;external_dependency} -->
+            <version>3.3.1</version> <!-- {x-version-update;org.apache.maven.plugins:maven-surefire-plugin;external_dependency} -->
             <configuration>
               <systemPropertiesFile>${AZURE_TEST_SYSTEM_PLAYBACK_PROPERTIES_FILE}</systemPropertiesFile>
             </configuration>
@@ -1531,7 +1531,7 @@
           <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-surefire-plugin</artifactId>
-            <version>3.2.5</version> <!-- {x-version-update;org.apache.maven.plugins:maven-surefire-plugin;external_dependency} -->
+            <version>3.3.1</version> <!-- {x-version-update;org.apache.maven.plugins:maven-surefire-plugin;external_dependency} -->
             <configuration>
               <systemPropertiesFile>${AZURE_TEST_SYSTEM_PLAYBACK_PROPERTIES_FILE}</systemPropertiesFile>
             </configuration>
@@ -1650,7 +1650,7 @@
         <dependency>
           <groupId>org.graalvm.buildtools</groupId>
           <artifactId>junit-platform-native</artifactId>
-          <version>0.9.19</version> <!-- {x-version-update;org.graalvm.buildtools:junit-platform-native;external_dependency} -->
+          <version>0.10.2</version> <!-- {x-version-update;org.graalvm.buildtools:junit-platform-native;external_dependency} -->
           <scope>test</scope>
         </dependency>
       </dependencies>
@@ -1659,7 +1659,7 @@
           <plugin>
             <groupId>org.graalvm.buildtools</groupId>
             <artifactId>native-maven-plugin</artifactId>
-            <version>0.9.19</version>  <!-- {x-version-update;org.graalvm.buildtools:native-maven-plugin;external_dependency} -->
+            <version>0.10.2</version>  <!-- {x-version-update;org.graalvm.buildtools:native-maven-plugin;external_dependency} -->
             <configuration>
               <skip>${graalvm.disable}</skip>
               <buildArgs>--no-fallback ${nativeImage.buildArgs} -H:IncludeResources=.*</buildArgs>

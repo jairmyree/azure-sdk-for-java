@@ -13,6 +13,7 @@ updates:
     ignore:
         - dependency-name: "*" 
           update-types: ["version-update:semver-major"]
+          
   - package-ecosystem: "maven" # See documentation for possible values
     directories: 
       - "/sdk/core"

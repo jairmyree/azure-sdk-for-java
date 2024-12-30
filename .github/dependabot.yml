@@ -10,8 +10,6 @@ updates:
       - "/sdk/core" # Location of package manifests
     schedule:
       interval: "daily"
-    reviewers:
-      - "jairmyree"
     target-branch: "dependency-updates"
     ignore:
       - dependency-name: "*"
@@ -21,8 +19,6 @@ updates:
       - "/sdk/identity"
     schedule:
       interval: "daily"
-    reviewers:
-      - "jairmyree"
     target-branch: "dependency-updates"
     ignore:
       - dependency-name: "*"

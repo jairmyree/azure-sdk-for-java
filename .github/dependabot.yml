@@ -10,8 +10,20 @@ updates:
       - "/sdk/core" # Location of package manifests
     schedule:
       interval: "daily"
+    reviewers:
+      - "jairmyree"
+    target-branch: "dependency-updates"
+    ignore:
+      - dependency-name: "*"
+        update-types: ["version-update:semver-major"]
   - package-ecosystem: "maven" # See documentation for possible values
     directories: 
       - "/sdk/identity"
     schedule:
       interval: "daily"
+    reviewers:
+      - "jairmyree"
+    target-branch: "dependency-updates"
+    ignore:
+      - dependency-name: "*"
+        update-types: ["version-update:semver-major"]

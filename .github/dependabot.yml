@@ -6,6 +6,8 @@
 version: 2
 updates:
   - package-ecosystem: "maven" # See documentation for possible values
-    directory: "/sdk" # Location of package manifests
+    directories: 
+      - "/sdk/core" # Location of package manifests
+      - "/sdk/identity"
     schedule:
       interval: "daily"

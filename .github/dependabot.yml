@@ -7,12 +7,6 @@ version: 2
 updates:
   - package-ecosystem: "maven" # See documentation for possible values
     directories: 
-      - "/sdk/core" # Location of package manifests
-    schedule:
-      interval: "daily"
-    target-branch: "dependency-updates"
-  - package-ecosystem: "maven" # See documentation for possible values
-    directories: 
       - "/sdk/identity"
     schedule:
       interval: "daily"

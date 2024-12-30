@@ -1,0 +1,34 @@
+name: Dependabot fetch metadata
+on: pull_request
+
+permissions:
+  pull-requests: write
+  issues: write
+  repository-projects: write
+
+jobs:
+  dependabot:
+    permissions:
+      pull-requests: read
+    runs-on: ubuntu-latest
+    if: github.event.pull_request.user.login == 'dependabot[bot]' && github.repository == 'owner/my_repo'
+    steps:
+    - name: Fetch Dependabot metadata
+      id: dependabot-metadata
+      uses: dependabot/fetch-metadata@v2
+      with:
+        alert-lookup: true
+        compat-lookup: true
+        github-token: "${{ secrets.PAT_TOKEN }}"
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.x'
+    - name: Adjust External Dependencies
+      run: python3 /eng/versioning/dependabot-update-external-dependencies.py -d ${{steps.dependabot-metadata.outputs.dependency-names}}
+    
+        
+      # The following properties are now available:
+      #  - steps.metadata.outputs.dependency-names
+      #  - steps.metadata.outputs.dependency-type
+      #  - steps.metadata.outputs.update-type

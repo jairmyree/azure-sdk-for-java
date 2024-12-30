@@ -11,15 +11,11 @@ updates:
     schedule:
       interval: "daily"
     target-branch: "dependency-updates"
-    ignore:
-      - dependency-name: "*"
-        update-types: ["version-update:semver-major"]
   - package-ecosystem: "maven" # See documentation for possible values
     directories: 
       - "/sdk/identity"
     schedule:
       interval: "daily"
-    target-branch: "dependency-updates"
     ignore:
       - dependency-name: "*"
         update-types: ["version-update:semver-major"]

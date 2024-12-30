@@ -16,13 +16,3 @@ updates:
         - dependency-name: "*" 
           update-types: ["version-update:semver-major"]
           
-  - package-ecosystem: "maven" # See documentation for possible values
-    directories: 
-      - "/sdk/core/"
-    schedule:
-      interval: "daily"
-    target-branch: "dependency-updates"
-    reviewers: ["jairmyree"]
-    ignore:
-        - dependency-name: "*" 
-          update-types: ["version-update:semver-major"]

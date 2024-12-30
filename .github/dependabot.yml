@@ -7,7 +7,7 @@ version: 2
 updates:
   - package-ecosystem: "maven" # See documentation for possible values
     directories: 
-      - "/sdk/identity"
+      - "/sdk/identity/"
     schedule:
       interval: "daily"
     target-branch: "dependency-updates"
@@ -18,7 +18,7 @@ updates:
           
   - package-ecosystem: "maven" # See documentation for possible values
     directories: 
-      - "/sdk/core"
+      - "/sdk/core/"
     schedule:
       interval: "daily"
     target-branch: "dependency-updates"

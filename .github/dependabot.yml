@@ -17,5 +17,5 @@ updates:
     schedule:
       interval: "daily"
     ignore:
-        - dependency-name: "test*" 
+        - dependency-name: "@types/maven" 
           update-types: ["version-update:semver-major"]

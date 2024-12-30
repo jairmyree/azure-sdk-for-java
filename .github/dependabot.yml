@@ -10,8 +10,6 @@ updates:
       - "/sdk/identity/"
     schedule:
       interval: "daily"
-    target-branch: "dependency-updates"
-    reviewers: ["jairmyree"]
     ignore:
         - dependency-name: "*" 
           update-types: ["version-update:semver-major"]

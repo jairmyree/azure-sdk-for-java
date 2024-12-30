@@ -6,17 +6,6 @@
 version: 2
 updates:
   - package-ecosystem: "maven" # See documentation for possible values
-    directory: "/" # Location of package manifests
+    directory: "/sdk" # Location of package manifests
     schedule:
-      interval: "weekly"
-    labels:
-      - "dependabot"
-    reviewers:
-      - "jairmyree"
-    commit-message:
-      prefix: "Dependency Update: "
-    target-branch: "dependabot-updates"
-    ignore:
-      - dependency-name: "*"
-        update-types: ["version-update:semver-major"]
-      
+      interval: "daily"

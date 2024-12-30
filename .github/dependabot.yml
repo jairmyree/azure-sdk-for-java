@@ -17,5 +17,5 @@ updates:
     schedule:
       interval: "daily"
     ignore:
-        - dependency-name: "@types/maven" 
+        - dependency-name: "checkstyle" 
           update-types: ["version-update:semver-major"]

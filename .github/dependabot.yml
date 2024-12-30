@@ -11,6 +11,7 @@ updates:
     schedule:
       interval: "daily"
     reviewers: ["@jairmyree"]
+    target-branch: "dependency-updates"
     ignore:
         - dependency-name: "*" 
           update-types: ["version-update:semver-major"]

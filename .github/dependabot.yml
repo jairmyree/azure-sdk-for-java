@@ -12,6 +12,11 @@ updates:
       interval: "daily"
     reviewers: ["@jairmyree"]
     target-branch: "dependency-updates"
+    groups:
+      production-dependencies:
+        dependency-type: "production"
+      non-production-dependencies:
+        dependency-type: "development"
     ignore:
         - dependency-name: "*" 
           update-types: ["version-update:semver-major"]

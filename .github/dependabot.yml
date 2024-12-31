@@ -13,6 +13,8 @@ updates:
     reviewers: ["@jairmyree"]
     target-branch: "dependency-updates"
     open-pull-requests-limit: 7
+    commit-message:
+      prefix: "[Identity] "
     groups:
       production-dependencies:
         dependency-type: "production"

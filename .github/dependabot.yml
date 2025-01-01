@@ -12,7 +12,6 @@ updates:
       interval: "daily"
     reviewers: ["@jairmyree"]
     target-branch: "dependency-updates"
-    open-pull-requests-limit: 7
     commit-message:
       prefix: "[Identity] "
     groups:
@@ -30,6 +29,11 @@ updates:
     schedule:
       interval: "daily"
     reviewers: ["@jairmyree"]
+    groups:
+      production-dependencies:
+        dependency-type: "production"
+      non-production-dependencies:
+        dependency-type: "development"
     target-branch: "dependency-updates"
     ignore:
         - dependency-name: "*" 

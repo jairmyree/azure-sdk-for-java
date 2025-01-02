@@ -1,14 +1,14 @@
 import argparse
+import json
 
 def main():
     parser = argparse.ArgumentParser(description="Print out the names of dependencies.")
-    parser.add_argument('--dependencies', "-d", metavar='D', type=str, nargs='+', help='a list of dependencies')
-    parser.add_argument("--variable", type=str)
     parser.add_argument("--json", type=str)
+    parser.add_argument("--object")
     args = parser.parse_args()
 
-
-    print(args.variable)
+    json_string_obj = json.loads(args.json)
+    print(json_string_obj)
     print(args.json)
     for dependency in args.dependencies:
         print(dependency)

@@ -7,7 +7,7 @@ def main():
     parser.add_argument("--object")
     args = parser.parse_args()
 
-    json_string_obj = json.loads(args.json)
+    json_string_obj = json.loads(args.object)
     print(json_string_obj)
     print(args.json)
     for dependency in args.dependencies:

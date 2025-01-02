@@ -13,7 +13,7 @@ updates:
     reviewers: ["@jairmyree"]
     target-branch: "dependency-updates"
     commit-message:
-      prefix: "[Identity] "
+      prefix: "[Identity]"
     groups:
       Identity-production_dependencies:
         dependency-type: "production"

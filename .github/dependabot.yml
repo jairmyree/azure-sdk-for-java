@@ -12,7 +12,7 @@ updates:
       interval: "daily"
     reviewers: ["@jairmyree"]
     commit-message:
-      prefix: "[Identity]"
+      prefix: "[Identity] "
     groups:
       Identity-production_dependencies:
         dependency-type: "production"

@@ -16,8 +16,6 @@ updates:
     groups:
       Identity-production_dependencies:
         dependency-type: "production"
-      Identity-dev_dependencies:
-        dependency-type: "development"
     ignore:
         - dependency-name: "*" 
           update-types: ["version-update:semver-major"]

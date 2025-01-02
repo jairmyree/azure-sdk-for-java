@@ -38,4 +38,36 @@ updates:
     ignore:
         - dependency-name: "*" 
           update-types: ["version-update:semver-major"]
+
+  - package-ecosystem: "maven" # See documentation for possible values
+    directories: 
+      - "/sdk/search"
+    schedule:
+      interval: "daily"
+    reviewers: ["@jairmyree"]
+    groups:
+      production-dependencies:
+        dependency-type: "production"
+      non-production-dependencies:
+        dependency-type: "development"
+    target-branch: "dependency-updates"
+    ignore:
+        - dependency-name: "*" 
+          update-types: ["version-update:semver-major"]
+
+  - package-ecosystem: "maven" # See documentation for possible values
+    directories: 
+      - "/sdk/tables"
+    schedule:
+      interval: "daily"
+    reviewers: ["@jairmyree"]
+    groups:
+      production-dependencies:
+        dependency-type: "production"
+      non-production-dependencies:
+        dependency-type: "development"
+    target-branch: "dependency-updates"
+    ignore:
+        - dependency-name: "*" 
+          update-types: ["version-update:semver-major"]
           

@@ -13,9 +13,6 @@ updates:
     reviewers: ["@jairmyree"]
     commit-message:
       prefix: "[Tables]"
-    groups:
-      Identity-production_dependencies:
-        dependency-type: "production"
     ignore:
         - dependency-name: "*" 
           update-types: ["version-update:semver-major"]

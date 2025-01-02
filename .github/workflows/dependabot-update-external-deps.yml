@@ -20,6 +20,7 @@ jobs:
         github-token: "${{ secrets.GITHUB_TOKEN }}"
         alert-lookup: true
         compat-lookup: true
+        skip-commit-verification: true
 
     - name: Checkout repository
       uses: actions/checkout@v3
@@ -27,8 +28,9 @@ jobs:
       uses: actions/setup-python@v4
       with:
         python-version: '3.x'
+        
     - name: Adjust External Dependencies
-      run: python3 eng/versioning/dependabot-update-external-dependencies.py -d ${{steps.dependabot-metadata.outputs.dependency-names}}
+      run: echo ${{steps.dependabot-metadata.outputs}}
     
         
       # The following properties are now available:

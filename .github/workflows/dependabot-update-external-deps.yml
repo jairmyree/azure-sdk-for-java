@@ -27,8 +27,9 @@ jobs:
       uses: actions/setup-python@v4
       with:
         python-version: '3.x'
+        
     - name: Adjust External Dependencies
-      run: python3 eng/versioning/dependabot-update-external-dependencies.py -d ${{steps.dependabot-metadata.outputs.dependency-names}}
+      run: echo ${{steps.dependabot-metadata.outputs.updated-dependencies-json}} ${{steps.dependabot-metadata.outputs.new-version}}
     
         
       # The following properties are now available:

@@ -11,7 +11,6 @@ updates:
     schedule:
       interval: "daily"
     reviewers: ["@jairmyree"]
-    target-branch: "dependency-updates"
     commit-message:
       prefix: "[Identity]"
     groups:
@@ -19,50 +18,6 @@ updates:
         dependency-type: "production"
       Identity-dev_dependencies:
         dependency-type: "development"
-    ignore:
-        - dependency-name: "*" 
-          update-types: ["version-update:semver-major"]
-
-  - package-ecosystem: "maven" # See documentation for possible values
-    directories: 
-      - "/sdk/core"
-    schedule:
-      interval: "daily"
-    reviewers: ["@jairmyree"]
-    groups:
-      Core-production_dependencies:
-        dependency-type: "production"
-      Core-dev_dependencies:
-        dependency-type: "development"
-    target-branch: "dependency-updates"
-    ignore:
-        - dependency-name: "*" 
-          update-types: ["version-update:semver-major"]
-
-  - package-ecosystem: "maven" # See documentation for possible values
-    directories: 
-      - "/sdk/search"
-    schedule:
-      interval: "daily"
-    reviewers: ["@jairmyree"]
-    groups:
-      Search-production_dependencies:
-        dependency-type: "production"
-    target-branch: "dependency-updates"
-    ignore:
-        - dependency-name: "*" 
-          update-types: ["version-update:semver-major"]
-
-  - package-ecosystem: "maven" # See documentation for possible values
-    directories: 
-      - "/sdk/tables"
-    schedule:
-      interval: "daily"
-    reviewers: ["@jairmyree"]
-    groups:
-      Tables-production_dependencies:
-        dependency-type: "production"
-    target-branch: "dependency-updates"
     ignore:
         - dependency-name: "*" 
           update-types: ["version-update:semver-major"]

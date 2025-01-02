@@ -7,12 +7,12 @@ version: 2
 updates:
   - package-ecosystem: "maven" # See documentation for possible values
     directories: 
-      - "/sdk/identity"
+      - "/sdk/tables"
     schedule:
       interval: "daily"
     reviewers: ["@jairmyree"]
     commit-message:
-      prefix: "[Identity] "
+      prefix: "[Tables] "
     groups:
       Identity-production_dependencies:
         dependency-type: "production"

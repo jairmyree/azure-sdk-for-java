@@ -15,9 +15,9 @@ updates:
     commit-message:
       prefix: "[Identity] "
     groups:
-      production-dependencies:
+      Identity-production_dependencies:
         dependency-type: "production"
-      non-production-dependencies:
+      Identity-dev_dependencies:
         dependency-type: "development"
     ignore:
         - dependency-name: "*" 
@@ -30,9 +30,9 @@ updates:
       interval: "daily"
     reviewers: ["@jairmyree"]
     groups:
-      production-dependencies:
+      Core-production_dependencies:
         dependency-type: "production"
-      non-production-dependencies:
+      Core-dev_dependencies:
         dependency-type: "development"
     target-branch: "dependency-updates"
     ignore:
@@ -46,10 +46,8 @@ updates:
       interval: "daily"
     reviewers: ["@jairmyree"]
     groups:
-      production-dependencies:
+      Search-production_dependencies:
         dependency-type: "production"
-      non-production-dependencies:
-        dependency-type: "development"
     target-branch: "dependency-updates"
     ignore:
         - dependency-name: "*" 
@@ -62,10 +60,8 @@ updates:
       interval: "daily"
     reviewers: ["@jairmyree"]
     groups:
-      production-dependencies:
+      Tables-production_dependencies:
         dependency-type: "production"
-      non-production-dependencies:
-        dependency-type: "development"
     target-branch: "dependency-updates"
     ignore:
         - dependency-name: "*" 

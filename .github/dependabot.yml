@@ -7,12 +7,10 @@ version: 2
 updates:
   - package-ecosystem: "maven" # See documentation for possible values
     directories: 
-      - "/sdk/tables"
+      - "/sdk/boms/azure-sdk-bom"
     schedule:
       interval: "daily"
     reviewers: ["@jairmyree"]
-    commit-message:
-      prefix: "[Tables]"
     ignore:
         - dependency-name: "*" 
           update-types: ["version-update:semver-major"]

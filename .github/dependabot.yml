@@ -7,10 +7,10 @@ version: 2
 updates:
   - package-ecosystem: "maven" # See documentation for possible values
     directories: 
-      - "/sdk/boms/azure-sdk-bom"
+      - "/sdk"
     schedule:
       interval: "daily"
-    reviewers: ["@jairmyree"]
+    reviewers: ["jairmyree"]
     ignore:
         - dependency-name: "*" 
           update-types: ["version-update:semver-major"]

@@ -79,7 +79,7 @@
     <dependency>
       <groupId>com.azure</groupId>
       <artifactId>azure-core-http-jdk-httpclient</artifactId>
-      <version>1.0.0-beta.20</version> <!-- {x-version-update;com.azure:azure-core-http-jdk-httpclient;current} -->
+      <version>1.0.0-dev.20200828.1</version> <!-- {x-version-update;com.azure:azure-core-http-jdk-httpclient;current} -->
     </dependency>
     <dependency>
       <groupId>com.azure</groupId>
@@ -127,7 +127,7 @@
     <dependency>
       <groupId>org.apache.ant</groupId>
       <artifactId>ant</artifactId>
-      <version>1.10.14</version>  <!-- {x-version-update;org.apache.ant:ant;external_dependency} -->
+      <version>1.10.15</version>  <!-- {x-version-update;org.apache.ant:ant;external_dependency} -->
     </dependency>
   </dependencies>
 

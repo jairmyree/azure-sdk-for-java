@@ -82,13 +82,13 @@
     <dependency>
       <groupId>com.azure</groupId>
       <artifactId>azure-core-experimental</artifactId>
-      <version>1.0.0-beta.57</version> <!-- {x-version-update;com.azure:azure-core-experimental;current} -->
+      <version>1.0.0-dev.20200902.1</version> <!-- {x-version-update;com.azure:azure-core-experimental;current} -->
     </dependency>
 
     <dependency>
       <groupId>org.apache.avro</groupId>
       <artifactId>avro</artifactId>
-      <version>1.11.4</version> <!-- {x-version-update;org.apache.avro:avro;external_dependency} -->
+      <version>1.12.0</version> <!-- {x-version-update;org.apache.avro:avro;external_dependency} -->
     </dependency>
 
     <dependency>
@@ -150,7 +150,7 @@
           <plugin>
             <groupId>org.apache.avro</groupId>
             <artifactId>avro-maven-plugin</artifactId>
-            <version>1.11.4</version> <!-- {x-version-update;org.apache.avro:avro-maven-plugin;external_dependency} -->
+            <version>1.12.0</version> <!-- {x-version-update;org.apache.avro:avro-maven-plugin;external_dependency} -->
             <executions>
               <execution>
                 <phase>generate-sources</phase>

@@ -13,7 +13,7 @@ updates:
     reviewers: ["jairmyree"]
     open-pull-requests-limit: 5
     groups:
-      production-dependencies:
+      production:
         dependency-type: "production"
     ignore:
         - dependency-name: "*" 

@@ -11,7 +11,12 @@ updates:
     schedule:
       interval: "daily"
     reviewers: ["jairmyree"]
+    open-pull-requests-limit: 5
     ignore:
         - dependency-name: "*" 
           update-types: ["version-update:semver-major"]
+        - dependency-name: "org.apache.spark*"
+        - dependency-name: "io.projectreactor*"
+        - dependency-name: "com.fasterxml.jackson*"
+        - dependency-name: "org.springframework*"
           

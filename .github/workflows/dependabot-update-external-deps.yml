@@ -1,4 +1,4 @@
-name: Dependabot fetch metadata
+name: Dependabot Update External Dependencies
 on: pull_request
 
 permissions:
@@ -38,3 +38,15 @@ jobs:
       #  - steps.metadata.outputs.dependency-names
       #  - steps.metadata.outputs.dependency-type
       #  - steps.metadata.outputs.update-type
+
+    - name: Commit changes
+      run: |
+        git config --global user.name 'github-actions[bot]'
+        git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+        git add .
+        git commit -m "Commit message"
+        git push
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+

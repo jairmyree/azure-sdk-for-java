@@ -69,5 +69,7 @@ jobs:
           else
             echo "PR does not meet criteria for auto-merge."
           fi
+      env:
+        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
 

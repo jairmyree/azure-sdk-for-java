@@ -12,9 +12,6 @@ updates:
       interval: "daily"
     reviewers: ["jairmyree"]
     open-pull-requests-limit: 5
-    groups:
-      production:
-        dependency-type: "production"
     ignore:
         - dependency-name: "*" 
           update-types: ["version-update:semver-major"]

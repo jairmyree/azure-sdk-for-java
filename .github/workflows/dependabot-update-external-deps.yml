@@ -59,7 +59,6 @@ jobs:
     - name: Auto-Approve and Merge Pull Request
       if: ${{ steps.dependabot-metadata.outputs.update-type }} == "version-update:semver-patch" || (${{ steps.dependabot-metadata.outputs.update-type }} == "version-update:semver-minor" && ${{ steps.dependabot-metadata.outputs.compatibility-score }} >= 80)
       run: |
-        gh pr review --approve "$PR_URL"
         gh pr merge "$PR_URL" --auto --squash --admin
       env:
         GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

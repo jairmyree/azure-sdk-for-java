@@ -63,7 +63,7 @@ jobs:
           UPDATE_TYPE="${{ steps.dependabot-metadata.outputs.update-type }}"
           COMPATIBILITY_SCORE="${{ steps.dependabot-metadata.outputs.compatibility-score }}"
 
-          if "$UPDATE_TYPE" == "version-update:semver-patch" || ["$UPDATE_TYPE" == "version-update:semver-minor" && $COMPATIBILITY_SCORE >= 80]; then
+          if ["$UPDATE_TYPE" = "version-update:semver-patch"] || ["$UPDATE_TYPE" = "version-update:semver-minor" && $COMPATIBILITY_SCORE >= 80]; then
             gh pr review --approve "$PR_URL"
             gh pr merge "$PR_URL" --auto --squash --admin
           else

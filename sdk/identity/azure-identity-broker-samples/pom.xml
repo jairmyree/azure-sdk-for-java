@@ -61,7 +61,7 @@
           <rules>
             <bannedDependencies>
               <includes>
-                <include>org.openjfx:javafx-graphics:[17.0.6]</include> <!-- {x-include-update;org.openjfx:javafx-graphics;external_dependency} -->
+                <include>org.openjfx:javafx-graphics:[17.0.14-ea+2]</include> <!-- {x-include-update;org.openjfx:javafx-graphics;external_dependency} -->
               </includes>
             </bannedDependencies>
           </rules>

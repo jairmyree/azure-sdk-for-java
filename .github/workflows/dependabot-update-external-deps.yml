@@ -31,7 +31,7 @@ jobs:
         python-version: '3.x'
         
     - name: Adjust External Dependencies
-      run: python eng/versioning/dependabot-update-external-dependencies.py --json '${{steps.dependabot-metadata.outputs.updated-dependencies-json}}'
+      run: python eng/versioning/dependabot_update_external_dependencies.py --json '${{steps.dependabot-metadata.outputs.updated-dependencies-json}}'
     
         
       # The following properties are now available:

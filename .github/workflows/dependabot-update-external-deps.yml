@@ -52,4 +52,18 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
+    - name: Auto-Approve and Merge Pull Request
+      run: |
+        gh pr checkout "$PR_URL" # sets the upstream metadata for `gh pr status`
+          PR_URL="${{ github.event.pull_request.html_url }}"
+          UPDATE_TYPE="${{ steps.dependabot-metadata.outputs.update-type }}"
+          COMPATIBILITY_SCORE="${{ steps.dependabot-metadata.outputs.compatibility-score }}"
+
+          if "$UPDATE_TYPE" == "version-update:semver-patch" || ["$UPDATE_TYPE" == "version-update:semver-minor" && $COMPATIBILITY_SCORE >= 80]; then
+            gh pr review --approve "$PR_URL"
+            gh pr merge "$PR_URL" --auto --squash --admin
+          else
+            echo "PR does not meet criteria for auto-merge."
+          fi
+
 

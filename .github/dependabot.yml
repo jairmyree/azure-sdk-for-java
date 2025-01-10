@@ -7,16 +7,16 @@ version: 2
 updates:
   - package-ecosystem: "maven" # See documentation for possible values
     directories: 
-      - "/sdk/*"
+      - "/sdk/core/*"
     schedule:
       interval: "daily"
     reviewers: ["jairmyree"]
-    open-pull-requests-limit: 5
+    open-pull-requests-limit: 15
     ignore:
         - dependency-name: "*" 
           update-types: ["version-update:semver-major"]
         - dependency-name: "*"
-          versions: ["alpha", "a", "beta", "b", "milestone", "m", "rc", "cr", "sp", "ga", "final", "release", "snapshot", "stable", "next"]
+          versions: ["x.x.x-beta.*", "x.x.x-alpha.*"]
         - dependency-name: "org.apache.spark*"
         - dependency-name: "io.projectreactor*"
         - dependency-name: "com.fasterxml.jackson*"

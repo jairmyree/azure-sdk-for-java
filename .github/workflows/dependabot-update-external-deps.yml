@@ -51,7 +51,7 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
     - name: Auto-Approve and Merge Pull Request
-      if: ${{ steps.dependabot-metadata.outputs.update-type }} == "version-update:semver-patch" || (${{ steps.dependabot-metadata.outputs.update-type }} == "version-update:semver-minor" && ${{ steps.dependabot-metadata.outputs.compatibility-score }} >= 80)
+      if: ${{ steps.dependabot-metadata.outputs.update-type  == 'version-update:semver-patch' || (steps.dependabot-metadata.outputs.update-type == 'version-update:semver-minor' && steps.dependabot-metadata.outputs.compatibility-score >= 80)}}
       run: |
         if [ "$(gh pr status --json reviewDecision -q .currentBranch.reviewDecision)" != "APPROVED" ]; then
           gh pr review --approve "${{ github.event.pull_request.html_url }}"

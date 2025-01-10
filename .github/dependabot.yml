@@ -16,7 +16,7 @@ updates:
         - dependency-name: "*" 
           update-types: ["version-update:semver-major"]
         - dependency-name: "*"
-          versions: ["alpha","stable","release"]
+          versions: ["alpha", "a", "beta", "b", "milestone", "m", "rc", "cr", "sp", "ga", "final", "release", "snapshot"]
         - dependency-name: "org.apache.spark*"
         - dependency-name: "io.projectreactor*"
         - dependency-name: "com.fasterxml.jackson*"

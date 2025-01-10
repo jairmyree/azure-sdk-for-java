@@ -91,7 +91,7 @@
     <dependency>
       <groupId>com.knuddels</groupId>
       <artifactId>jtokkit</artifactId>
-      <version>1.0.0</version> <!-- {x-version-update;com.knuddels:jtokkit;external_dependency} -->
+      <version>1.1.0</version> <!-- {x-version-update;com.knuddels:jtokkit;external_dependency} -->
       <scope>test</scope>
     </dependency>
     <dependency>

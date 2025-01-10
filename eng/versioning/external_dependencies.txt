@@ -94,7 +94,7 @@ org.slf4j:slf4j-nop;1.7.36
 org.slf4j:slf4j-simple;1.7.36
 redis.clients:jedis;5.2.0
 io.lettuce:lettuce-core;6.4.0.RELEASE
-org.redisson:redisson;3.36.0
+org.redisson:redisson;3.42.0
 testdep_net.bytebuddy:byte-buddy;1.15.5
 testdep_net.bytebuddy:byte-buddy-agent;1.15.5
 

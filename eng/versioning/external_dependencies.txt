@@ -27,7 +27,7 @@ com.google.code.gson:gson;2.11.0
 com.google.guava:guava;33.1.0-jre
 com.h2database:h2;2.2.220
 com.h3xstream.findsecbugs:findsecbugs-plugin;1.9.0
-com.knuddels:jtokkit;1.0.0
+com.knuddels:jtokkit;1.1.0
 com.microsoft.azure:azure-client-authentication;1.7.14
 com.microsoft.azure:azure-client-runtime;1.7.14
 com.microsoft.azure:azure-core;0.9.8

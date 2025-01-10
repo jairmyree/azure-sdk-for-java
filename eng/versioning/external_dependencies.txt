@@ -167,7 +167,7 @@ com.beust:jcommander;1.82
 com.diffplug.spotless:spotless-maven-plugin;2.30.0
 com.github.javaparser:javaparser-core;3.26.2
 com.google.code.findbugs:jsr305;3.0.2
-com.nimbusds:nimbus-jose-jwt;9.37.3
+com.nimbusds:nimbus-jose-jwt;9.48
 com.puppycrawl.tools:checkstyle;9.3
 com.toasttab.android:gummy-bears-api-26;0.10.0
 commons-io:commons-io;2.17.0
@@ -328,7 +328,7 @@ springboot3_com.fasterxml.jackson.module:jackson-module-parameter-names;2.18.2
 springboot3_com.github.spotbugs:spotbugs-maven-plugin;4.8.2.0
 springboot3_com.google.code.findbugs:jsr305;3.0.2
 springboot3_com.mysql:mysql-connector-j;9.1.0
-springboot3_com.nimbusds:nimbus-jose-jwt;9.37.3
+springboot3_com.nimbusds:nimbus-jose-jwt;9.48
 springboot3_io.lettuce:lettuce-core;6.4.1.RELEASE
 springboot3_io.micrometer:micrometer-core;1.14.2
 springboot3_io.netty:netty-buffer;4.1.116.Final

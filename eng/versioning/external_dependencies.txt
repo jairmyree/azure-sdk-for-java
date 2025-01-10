@@ -170,7 +170,7 @@ com.google.code.findbugs:jsr305;3.0.2
 com.nimbusds:nimbus-jose-jwt;9.37.3
 com.puppycrawl.tools:checkstyle;9.3
 com.toasttab.android:gummy-bears-api-26;0.10.0
-commons-io:commons-io;2.17.0
+commons-io:commons-io;2.18.0
 io.reactivex.rxjava2:rxjava;2.2.21
 net.java.dev.jna:jna-platform;5.13.0
 net.oneandone.reflections8:reflections8;0.11.7
@@ -259,7 +259,7 @@ cosmos-spark_3-5_org.apache.spark:spark-hive_2.12;3.5.0
 cosmos_org.scala-lang:scala-library;2.12.19
 cosmos_org.scala-lang.modules:scala-java8-compat_2.12;0.8.0
 cosmos_io.projectreactor:reactor-scala-extensions_2.12;0.8.0
-cosmos_commons-io:commons-io;2.4
+cosmos_commons-io:commons-io;2.18.0
 cosmos_com.microsoft.azure:applicationinsights-core;2.6.4
 
 # Cosmos Spark connector tests only

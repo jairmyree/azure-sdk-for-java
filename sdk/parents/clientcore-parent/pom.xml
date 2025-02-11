@@ -987,7 +987,7 @@
             <dependency>
               <groupId>org.revapi</groupId>
               <artifactId>revapi-java</artifactId>
-              <version>0.26.1</version> <!-- {x-version-update;org.revapi:revapi-java;external_dependency} -->
+              <version>0.28.1</version> <!-- {x-version-update;org.revapi:revapi-java;external_dependency} -->
             </dependency>
             <dependency>
               <groupId>org.revapi</groupId>

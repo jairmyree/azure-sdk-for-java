@@ -211,8 +211,8 @@ org.moditect:moditect-maven-plugin;1.0.0.RC1
 org.owasp:dependency-check-maven;11.1.1
 org.ow2.asm:asm;9.7
 org.revapi:revapi;0.14.4
-org.revapi:revapi-java;0.26.1
-org.revapi:revapi-java-spi;0.23.6
+org.revapi:revapi-java;0.28.1
+org.revapi:revapi-java-spi;0.28.1
 org.revapi:revapi-reporter-json;0.4.5
 org.revapi:revapi-maven-plugin;0.14.6
 

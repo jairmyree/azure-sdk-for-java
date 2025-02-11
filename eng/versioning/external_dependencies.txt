@@ -214,7 +214,7 @@ org.revapi:revapi;0.14.4
 org.revapi:revapi-java;0.26.1
 org.revapi:revapi-java-spi;0.23.6
 org.revapi:revapi-reporter-json;0.4.5
-org.revapi:revapi-maven-plugin;0.14.6
+org.revapi:revapi-maven-plugin;0.15.0
 
 # External Dependency Exceptions
 # This section is for external dependencies whose versions were different than
@@ -366,7 +366,7 @@ springboot3_org.junit.vintage:junit-vintage-engine;5.11.4
 springboot3_org.messaginghub:pooled-jms;3.1.7
 springboot3_org.mockito:mockito-core;5.14.2
 springboot3_org.postgresql:postgresql;42.7.5
-springboot3_org.revapi:revapi-maven-plugin;0.14.6
+springboot3_org.revapi:revapi-maven-plugin;0.15.0
 springboot3_org.slf4j:slf4j-api;2.0.16
 springboot3_org.slf4j:slf4j-simple;2.0.16
 springboot3_org.springframework.boot:spring-boot-actuator-autoconfigure;3.4.2

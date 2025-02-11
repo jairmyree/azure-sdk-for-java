@@ -21,7 +21,7 @@ jobs:
       id: dependabot-metadata
       uses: dependabot/fetch-metadata@v2
       with:
-        github-token: "${{ secrets.GITHUB_TOKEN }}"
+        github-token: "${{ secrets.PAT_TOKEN }}"
         alert-lookup: true
         compat-lookup: true
         skip-verification: true
@@ -53,7 +53,7 @@ jobs:
           echo "No changes to commit"
         fi
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_TOKEN: "${{ secrets.PAT_TOKEN }}"
 
 #    - name: Auto-Approve and Merge Pull Request
 #      if: ${{ steps.dependabot-metadata.outputs.update-type  == 'version-update:semver-patch' || (steps.dependabot-metadata.outputs.update-type == 'version-update:semver-minor' && steps.dependabot-metadata.outputs.compatibility-score >= 80)}}

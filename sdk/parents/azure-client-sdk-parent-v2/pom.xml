@@ -1494,7 +1494,7 @@
         <dependency>
           <groupId>org.graalvm.buildtools</groupId>
           <artifactId>junit-platform-native</artifactId>
-          <version>0.9.19</version> <!-- {x-version-update;org.graalvm.buildtools:junit-platform-native;external_dependency} -->
+          <version>0.10.5</version> <!-- {x-version-update;org.graalvm.buildtools:junit-platform-native;external_dependency} -->
           <scope>test</scope>
         </dependency>
       </dependencies>
